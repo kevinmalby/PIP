@@ -1,0 +1,256 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL := cmd.exe
+RM := rm -rf
+
+USER_OBJS :=
+
+LIBS := 
+PROJ := 
+
+O_SRCS := 
+C_SRCS := 
+S_SRCS := 
+S_UPPER_SRCS := 
+OBJ_SRCS := 
+ASM_SRCS := 
+PREPROCESSING_SRCS := 
+OBJS := 
+OBJS_AS_ARGS := 
+C_DEPS := 
+C_DEPS_AS_ARGS := 
+EXECUTABLES := 
+OUTPUT_FILE_PATH :=
+OUTPUT_FILE_PATH_AS_ARGS :=
+AVR_APP_PATH :=$$$AVR_APP_PATH$$$
+QUOTE := "
+ADDITIONAL_DEPENDENCIES:=
+OUTPUT_FILE_DEP:=
+
+# Every subdirectory with source files must be described here
+SUBDIRS :=  \
+../src/ \
+../src/asf/ \
+../src/asf/avr32/ \
+../src/asf/avr32/boards/ \
+../src/asf/avr32/boards/evk1100/ \
+../src/asf/avr32/drivers/ \
+../src/asf/avr32/drivers/flashc/ \
+../src/asf/avr32/drivers/gpio/ \
+../src/asf/avr32/drivers/intc/ \
+../src/asf/avr32/utils/ \
+../src/asf/avr32/utils/header_files/ \
+../src/asf/avr32/utils/linker_scripts/ \
+../src/asf/avr32/utils/linker_scripts/at32uc3a/ \
+../src/asf/avr32/utils/linker_scripts/at32uc3a/0512/ \
+../src/asf/avr32/utils/linker_scripts/at32uc3a/0512/gcc/ \
+../src/asf/avr32/utils/preprocessor/ \
+../src/asf/avr32/utils/startup/ \
+../src/asf/common/ \
+../src/asf/common/boards/ \
+../src/asf/common/services/ \
+../src/asf/common/services/clock/ \
+../src/asf/common/services/clock/uc3a0_a1/ \
+../src/asf/common/utils/ \
+../src/asf/common/utils/interrupt/ \
+../src/config/
+
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS +=  \
+../src/asf/avr32/boards/evk1100/init.c \
+../src/asf/avr32/drivers/flashc/flashc.c \
+../src/asf/avr32/drivers/gpio/gpio.c \
+../src/asf/avr32/drivers/intc/intc.c \
+../src/asf/common/services/clock/uc3a0_a1/sysclk.c \
+../src/clock_example2_uc3.c
+
+
+PREPROCESSING_SRCS +=  \
+../src/asf/avr32/drivers/intc/exception.S \
+../src/asf/avr32/utils/startup/startup_uc3.S \
+../src/asf/avr32/utils/startup/trampoline_uc3.S
+
+
+ASM_SRCS += 
+
+
+OBJS +=  \
+src/asf/avr32/boards/evk1100/init.o \
+src/asf/avr32/drivers/flashc/flashc.o \
+src/asf/avr32/drivers/gpio/gpio.o \
+src/asf/avr32/drivers/intc/exception.o \
+src/asf/avr32/drivers/intc/intc.o \
+src/asf/avr32/utils/startup/startup_uc3.o \
+src/asf/avr32/utils/startup/trampoline_uc3.o \
+src/asf/common/services/clock/uc3a0_a1/sysclk.o \
+src/clock_example2_uc3.o
+
+
+OBJS_AS_ARGS +=  \
+src/asf/avr32/boards/evk1100/init.o \
+src/asf/avr32/drivers/flashc/flashc.o \
+src/asf/avr32/drivers/gpio/gpio.o \
+src/asf/avr32/drivers/intc/exception.o \
+src/asf/avr32/drivers/intc/intc.o \
+src/asf/avr32/utils/startup/startup_uc3.o \
+src/asf/avr32/utils/startup/trampoline_uc3.o \
+src/asf/common/services/clock/uc3a0_a1/sysclk.o \
+src/clock_example2_uc3.o
+
+
+C_DEPS +=  \
+src/asf/avr32/boards/evk1100/init.d \
+src/asf/avr32/drivers/flashc/flashc.d \
+src/asf/avr32/drivers/gpio/gpio.d \
+src/asf/avr32/drivers/intc/intc.d \
+src/asf/common/services/clock/uc3a0_a1/sysclk.d \
+src/clock_example2_uc3.d
+
+
+C_DEPS_AS_ARGS +=  \
+src/asf/avr32/boards/evk1100/init.d \
+src/asf/avr32/drivers/flashc/flashc.d \
+src/asf/avr32/drivers/gpio/gpio.d \
+src/asf/avr32/drivers/intc/intc.d \
+src/asf/common/services/clock/uc3a0_a1/sysclk.d \
+src/clock_example2_uc3.d
+
+
+OUTPUT_FILE_PATH +=CLOCK_EXAMPLE24.elf
+
+OUTPUT_FILE_PATH_AS_ARGS +=CLOCK_EXAMPLE24.elf
+
+ADDITIONAL_DEPENDENCIES:=
+
+OUTPUT_FILE_DEP:= ./makedep.mk
+
+# AVR32/GNU C Compiler
+
+
+
+
+
+
+
+
+
+
+
+
+
+src/asf/avr32/boards/evk1100/%.o: ../src/asf/avr32/boards/evk1100/%.c
+	@echo Building file: $<
+	@echo Invoking: AVR32/GNU C Compiler
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-gcc.exe$(QUOTE)  -DBOARD=EVK1100  -I"../src/asf/common/services/clock/example2/at32uc3a0512_evk1100" -I"../src/asf/avr32/utils/preprocessor" -I"../src/asf/avr32/drivers/flashc" -I"../src/asf/avr32/boards/evk1100" -I"../src/asf/common/services/clock" -I"../src/asf/avr32/boards" -I"../src/asf/avr32/drivers/gpio" -I"../src/asf/avr32/drivers/intc" -I"../src/asf/avr32/utils" -I"../src/asf/common/boards" -I"../src/asf/common/utils" -I"../src" -I"../src/config"  -O1 -fdata-sections -ffunction-sections -masm-addr-pseudos -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mno-cond-exec-before-reload -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)"  -mpart=uc3a0512  -o"$@" "$<" 
+	@echo Finished building: $<
+
+src/asf/avr32/drivers/flashc/%.o: ../src/asf/avr32/drivers/flashc/%.c
+	@echo Building file: $<
+	@echo Invoking: AVR32/GNU C Compiler
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-gcc.exe$(QUOTE)  -DBOARD=EVK1100  -I"../src/asf/common/services/clock/example2/at32uc3a0512_evk1100" -I"../src/asf/avr32/utils/preprocessor" -I"../src/asf/avr32/drivers/flashc" -I"../src/asf/avr32/boards/evk1100" -I"../src/asf/common/services/clock" -I"../src/asf/avr32/boards" -I"../src/asf/avr32/drivers/gpio" -I"../src/asf/avr32/drivers/intc" -I"../src/asf/avr32/utils" -I"../src/asf/common/boards" -I"../src/asf/common/utils" -I"../src" -I"../src/config"  -O1 -fdata-sections -ffunction-sections -masm-addr-pseudos -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mno-cond-exec-before-reload -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)"  -mpart=uc3a0512  -o"$@" "$<" 
+	@echo Finished building: $<
+
+src/asf/avr32/drivers/gpio/%.o: ../src/asf/avr32/drivers/gpio/%.c
+	@echo Building file: $<
+	@echo Invoking: AVR32/GNU C Compiler
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-gcc.exe$(QUOTE)  -DBOARD=EVK1100  -I"../src/asf/common/services/clock/example2/at32uc3a0512_evk1100" -I"../src/asf/avr32/utils/preprocessor" -I"../src/asf/avr32/drivers/flashc" -I"../src/asf/avr32/boards/evk1100" -I"../src/asf/common/services/clock" -I"../src/asf/avr32/boards" -I"../src/asf/avr32/drivers/gpio" -I"../src/asf/avr32/drivers/intc" -I"../src/asf/avr32/utils" -I"../src/asf/common/boards" -I"../src/asf/common/utils" -I"../src" -I"../src/config"  -O1 -fdata-sections -ffunction-sections -masm-addr-pseudos -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mno-cond-exec-before-reload -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)"  -mpart=uc3a0512  -o"$@" "$<" 
+	@echo Finished building: $<
+
+src/asf/avr32/drivers/intc/%.o: ../src/asf/avr32/drivers/intc/%.c
+	@echo Building file: $<
+	@echo Invoking: AVR32/GNU C Compiler
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-gcc.exe$(QUOTE)  -DBOARD=EVK1100  -I"../src/asf/common/services/clock/example2/at32uc3a0512_evk1100" -I"../src/asf/avr32/utils/preprocessor" -I"../src/asf/avr32/drivers/flashc" -I"../src/asf/avr32/boards/evk1100" -I"../src/asf/common/services/clock" -I"../src/asf/avr32/boards" -I"../src/asf/avr32/drivers/gpio" -I"../src/asf/avr32/drivers/intc" -I"../src/asf/avr32/utils" -I"../src/asf/common/boards" -I"../src/asf/common/utils" -I"../src" -I"../src/config"  -O1 -fdata-sections -ffunction-sections -masm-addr-pseudos -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mno-cond-exec-before-reload -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)"  -mpart=uc3a0512  -o"$@" "$<" 
+	@echo Finished building: $<
+
+src/asf/common/services/clock/uc3a0_a1/%.o: ../src/asf/common/services/clock/uc3a0_a1/%.c
+	@echo Building file: $<
+	@echo Invoking: AVR32/GNU C Compiler
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-gcc.exe$(QUOTE)  -DBOARD=EVK1100  -I"../src/asf/common/services/clock/example2/at32uc3a0512_evk1100" -I"../src/asf/avr32/utils/preprocessor" -I"../src/asf/avr32/drivers/flashc" -I"../src/asf/avr32/boards/evk1100" -I"../src/asf/common/services/clock" -I"../src/asf/avr32/boards" -I"../src/asf/avr32/drivers/gpio" -I"../src/asf/avr32/drivers/intc" -I"../src/asf/avr32/utils" -I"../src/asf/common/boards" -I"../src/asf/common/utils" -I"../src" -I"../src/config"  -O1 -fdata-sections -ffunction-sections -masm-addr-pseudos -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mno-cond-exec-before-reload -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)"  -mpart=uc3a0512  -o"$@" "$<" 
+	@echo Finished building: $<
+
+src/%.o: ../src/%.c
+	@echo Building file: $<
+	@echo Invoking: AVR32/GNU C Compiler
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-gcc.exe$(QUOTE)  -DBOARD=EVK1100  -I"../src/asf/common/services/clock/example2/at32uc3a0512_evk1100" -I"../src/asf/avr32/utils/preprocessor" -I"../src/asf/avr32/drivers/flashc" -I"../src/asf/avr32/boards/evk1100" -I"../src/asf/common/services/clock" -I"../src/asf/avr32/boards" -I"../src/asf/avr32/drivers/gpio" -I"../src/asf/avr32/drivers/intc" -I"../src/asf/avr32/utils" -I"../src/asf/common/boards" -I"../src/asf/common/utils" -I"../src" -I"../src/config"  -O1 -fdata-sections -ffunction-sections -masm-addr-pseudos -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mno-cond-exec-before-reload -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)"  -mpart=uc3a0512  -o"$@" "$<" 
+	@echo Finished building: $<
+
+
+
+# AVR32/GNU Preprocessing Assembler
+
+src/asf/avr32/drivers/intc/%.o: ../src/asf/avr32/drivers/intc/%.S
+	@echo Building file: $<
+	@echo Invoking: AVR32/GNU C Preprocessing Assembler
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-gcc.exe$(QUOTE) -x assembler-with-cpp -c -DBOARD=EVK1100 -mrelax -I "../src/asf/common/services/clock/example2/at32uc3a0512_evk1100" -I "../src/asf/avr32/utils/preprocessor" -I "../src/asf/avr32/drivers/flashc" -I "../src/asf/avr32/boards/evk1100" -I "../src/asf/common/services/clock" -I "../src/asf/avr32/boards" -I "../src/asf/avr32/drivers/gpio" -I "../src/asf/avr32/drivers/intc" -I "../src/asf/avr32/utils" -I "../src/asf/common/boards" -I "../src/asf/common/utils" -I "../src" -I "../src/config"  -Wa,-g  -mpart=uc3a0512   -o"$@" "$<" 
+	@echo Finished building: $<
+
+src/asf/avr32/drivers/intc/%.o: ../src/asf/avr32/drivers/intc/%.x
+	@echo Building file: $<
+	@echo Invoking: AVR32/GNU C Preprocessing Assembler
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-gcc.exe$(QUOTE) -x assembler-with-cpp -c -DBOARD=EVK1100 -mrelax -I "../src/asf/common/services/clock/example2/at32uc3a0512_evk1100" -I "../src/asf/avr32/utils/preprocessor" -I "../src/asf/avr32/drivers/flashc" -I "../src/asf/avr32/boards/evk1100" -I "../src/asf/common/services/clock" -I "../src/asf/avr32/boards" -I "../src/asf/avr32/drivers/gpio" -I "../src/asf/avr32/drivers/intc" -I "../src/asf/avr32/utils" -I "../src/asf/common/boards" -I "../src/asf/common/utils" -I "../src" -I "../src/config"  -Wa,-g  -mpart=uc3a0512   -o"$@" "$<" 
+	@echo Finished building: $<
+
+src/asf/avr32/drivers/intc/%.o: ../src/asf/avr32/drivers/intc/%.X
+	@echo Building file: $<
+	@echo Invoking: AVR32/GNU C Preprocessing Assembler
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-gcc.exe$(QUOTE) -x assembler-with-cpp -c -DBOARD=EVK1100 -mrelax -I "../src/asf/common/services/clock/example2/at32uc3a0512_evk1100" -I "../src/asf/avr32/utils/preprocessor" -I "../src/asf/avr32/drivers/flashc" -I "../src/asf/avr32/boards/evk1100" -I "../src/asf/common/services/clock" -I "../src/asf/avr32/boards" -I "../src/asf/avr32/drivers/gpio" -I "../src/asf/avr32/drivers/intc" -I "../src/asf/avr32/utils" -I "../src/asf/common/boards" -I "../src/asf/common/utils" -I "../src" -I "../src/config"  -Wa,-g  -mpart=uc3a0512   -o"$@" "$<" 
+	@echo Finished building: $<
+
+src/asf/avr32/utils/startup/%.o: ../src/asf/avr32/utils/startup/%.S
+	@echo Building file: $<
+	@echo Invoking: AVR32/GNU C Preprocessing Assembler
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-gcc.exe$(QUOTE) -x assembler-with-cpp -c -DBOARD=EVK1100 -mrelax -I "../src/asf/common/services/clock/example2/at32uc3a0512_evk1100" -I "../src/asf/avr32/utils/preprocessor" -I "../src/asf/avr32/drivers/flashc" -I "../src/asf/avr32/boards/evk1100" -I "../src/asf/common/services/clock" -I "../src/asf/avr32/boards" -I "../src/asf/avr32/drivers/gpio" -I "../src/asf/avr32/drivers/intc" -I "../src/asf/avr32/utils" -I "../src/asf/common/boards" -I "../src/asf/common/utils" -I "../src" -I "../src/config"  -Wa,-g  -mpart=uc3a0512   -o"$@" "$<" 
+	@echo Finished building: $<
+
+src/asf/avr32/utils/startup/%.o: ../src/asf/avr32/utils/startup/%.x
+	@echo Building file: $<
+	@echo Invoking: AVR32/GNU C Preprocessing Assembler
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-gcc.exe$(QUOTE) -x assembler-with-cpp -c -DBOARD=EVK1100 -mrelax -I "../src/asf/common/services/clock/example2/at32uc3a0512_evk1100" -I "../src/asf/avr32/utils/preprocessor" -I "../src/asf/avr32/drivers/flashc" -I "../src/asf/avr32/boards/evk1100" -I "../src/asf/common/services/clock" -I "../src/asf/avr32/boards" -I "../src/asf/avr32/drivers/gpio" -I "../src/asf/avr32/drivers/intc" -I "../src/asf/avr32/utils" -I "../src/asf/common/boards" -I "../src/asf/common/utils" -I "../src" -I "../src/config"  -Wa,-g  -mpart=uc3a0512   -o"$@" "$<" 
+	@echo Finished building: $<
+
+src/asf/avr32/utils/startup/%.o: ../src/asf/avr32/utils/startup/%.X
+	@echo Building file: $<
+	@echo Invoking: AVR32/GNU C Preprocessing Assembler
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-gcc.exe$(QUOTE) -x assembler-with-cpp -c -DBOARD=EVK1100 -mrelax -I "../src/asf/common/services/clock/example2/at32uc3a0512_evk1100" -I "../src/asf/avr32/utils/preprocessor" -I "../src/asf/avr32/drivers/flashc" -I "../src/asf/avr32/boards/evk1100" -I "../src/asf/common/services/clock" -I "../src/asf/avr32/boards" -I "../src/asf/avr32/drivers/gpio" -I "../src/asf/avr32/drivers/intc" -I "../src/asf/avr32/utils" -I "../src/asf/common/boards" -I "../src/asf/common/utils" -I "../src" -I "../src/config"  -Wa,-g  -mpart=uc3a0512   -o"$@" "$<" 
+	@echo Finished building: $<
+
+
+
+# AVR32/GNU Assembler
+
+
+
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+endif
+
+# Add inputs and outputs from these tool invocations to the build variables 
+
+# All Target
+all: $(OUTPUT_FILE_PATH) $(ADDITIONAL_DEPENDENCIES)
+
+$(OUTPUT_FILE_PATH): $(OBJS) $(USER_OBJS) $(OUTPUT_FILE_DEP)
+	@echo Building target: $@
+	@echo Invoking: AVR32/GNU C Linker
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-gcc.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -nostartfiles -Wl,-Map="CLOCK_EXAMPLE24.map" -Wl,--start-group -lm  -Wl,--end-group -Wl,--gc-sections --rodata-writable -Wl,--direct-data -T../src/asf/avr32/utils/linker_scripts/at32uc3a/0512/gcc/link_uc3a0512.lds -Wl,--relax -Wl,-e,_trampoline  -mpart=uc3a0512 
+	@echo Finished building target: $@
+	"C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature  "CLOCK_EXAMPLE24.elf" "CLOCK_EXAMPLE24.hex"
+	"C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "CLOCK_EXAMPLE24.elf" "CLOCK_EXAMPLE24.eep" || exit 0
+	"C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-objdump.exe" -h -S "CLOCK_EXAMPLE24.elf" > "CLOCK_EXAMPLE24.lss"
+	"C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.3.2.31\AVRToolchain\bin\avr32-size.exe" "CLOCK_EXAMPLE24.elf"
+	
+
+
+
+
+# Other Targets
+clean:
+	-$(RM) $(OBJS_AS_ARGS)$(C_DEPS_AS_ARGS) $(EXECUTABLES) 
+	rm -rf "CLOCK_EXAMPLE24.hex" "CLOCK_EXAMPLE24.lss" "CLOCK_EXAMPLE24.eep" "CLOCK_EXAMPLE24.map"
+	
